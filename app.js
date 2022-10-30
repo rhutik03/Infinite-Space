@@ -37,7 +37,11 @@ async function getPOD() {
   console.log("hell")
   const resp = await fetch(api_url);
   const data = await resp.json();
-  console.log(data)
+  const imgsrc = data.hdurl;
+  const imgdesc = data.explanation;
+  document.getElementById("pod").src=imgsrc;
+  document.getElementById("apod").innerHTML=imgdesc;
+
 }
 
 

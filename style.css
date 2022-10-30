@@ -160,6 +160,7 @@ main .intro{
     /* position: absolute; */
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 30px 50px;
@@ -171,10 +172,11 @@ main .intro{
     padding: 2%;
 }
 
-.info::first-line{
+.info::first-line, #tpd{
     font-size: xx-large;
     font-weight: 700;
 }
+
 
 
 .nwltr{
@@ -193,7 +195,7 @@ main .intro{
 
 }
 
-.neb{
+.neb,#APOD{
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -204,6 +206,16 @@ main .intro{
     
     height: 10%;
     width: 60%;
+    padding: 1rem;
+    z-index: -2;
+
+}
+
+#pod{
+    
+    height: 10%;
+    width: 80%;
+    padding: 1rem;
     z-index: -2;
 
 }
@@ -327,13 +339,14 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     height: 10%;
-    width: 60%;
+    width: 80%;
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 0 25px 0 rgba(231, 232, 255, 0.37);
     backdrop-filter: blur( 15.5px );
     -webkit-backdrop-filter: blur( 15.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 1rem;
     box-sizing: border-box;
 
 }
@@ -350,7 +363,7 @@ footer{
     padding: 0.5rem;
     font-size: 13px;
     border-radius: 0.5rem;
-    width: 12rem;
+    width: 80%;
     margin-bottom: 40px;
 }
 
@@ -417,6 +430,15 @@ footer{
 
     main .neb{
         margin: auto
+    }
+
+    #pod{
+    
+        height: 70%;
+        width: 70%;
+        padding: 1rem;
+        z-index: -2;
+    
     }
 
     .pltpg{

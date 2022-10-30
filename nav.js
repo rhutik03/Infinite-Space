@@ -10,7 +10,7 @@ document.write('<header>\
     <div class="nav_link hide">\
         <a href="#" class="planets">Planets</a>\
         <a href="#">Galaxies</a>\
-        <a href="#">About</a>\
+        <a href="about.html">About</a>\
     </div>\
 \
     <div class="planetsli hidepl">\
